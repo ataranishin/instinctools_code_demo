@@ -1,3 +1,4 @@
-To run this app:
-npm install
-npm run webpack
+<ul>
+  <li>npm install</li>
+  <li>npm run webpack</li>
+</ul>
