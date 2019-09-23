@@ -1,0 +1,384 @@
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url(fonts/gloria_hallelujah/gloriahallelujah.ttf);
+}
+
+* {
+  cursor: url('../img/cursor.cur'), auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gloria Hallelujah';
+}
+
+html {
+  font-size: 10px;
+  background-color: #c4e381;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.choice_of_player,
+.game_over_button {
+  margin: 0 auto;
+  width: 400px;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+.choice_of_head,
+.choice_of_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  font-size: 4rem;
+  color: #008000;
+}
+
+.controls:hover,
+.characters_name {
+  color: #004524;
+}
+
+.characters_name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.player_name {
+  left: 30px;
+}
+
+.enemy_name {
+  right: 30px;
+}
+
+.quantity_of_lost_life {
+  width: 355px;
+  height: 38px;
+  background-image: url('../img/background_for_left_life.png');
+  position: absolute;
+  top: 35px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: #dcd36a;
+}
+
+.quantity_of_lost_life_of_player {
+  background-position: 0px -11px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  left: 0;
+}
+
+.quantity_of_lost_life_of_enemy {
+  background-position: -368px -57px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  right: 0;
+}
+
+.characters_name,
+.player_body_1,
+.player_body_2,
+.player_body_3,
+.player_body_4,
+.player_head_1,
+.player_head_2,
+.player_head_3,
+.player_head_4,
+.enemy_body,
+.enemy_head,
+.enemy_legs,
+.enemy_weapon,
+.popup,
+.cross,
+.finish_game_button {
+  position: absolute;
+}
+
+.player_body_1 {
+  background-image: url('../img/body_1.png');
+}
+
+.player_body_2 {
+  background-image: url('../img/body_2.png');
+}
+
+.player_body_3{
+  background-image: url('../img/body_3.png');
+}
+
+.player_body_4 {
+  background-image: url('../img/body_4.png');
+}
+
+.player_head_1 {
+  background-image: url('../img/head_1.png');
+}
+
+.player_head_2 {
+  background-image: url('../img/head_2.png');
+}
+
+.player_head_3 {
+  background-image: url('../img/head_3.png');
+}
+
+.player_head_4 {
+  background-image: url('../img/head_4.png');
+}
+
+.player_head_1,
+.player_head_2,
+.player_head_3,
+.player_head_4,
+.player_head {
+  height: 210px;
+  width: 170px;
+  z-index: 2;
+}
+
+.player_head_1,
+.player_head_2,
+.player_head_3,
+.player_head_4 {
+  bottom: 312px;
+}
+
+.player_body {
+  width: 170px;
+  height: 200px;
+  bottom: 137px;
+  z-index: 1;
+  background-position: -20px -242px;
+}
+
+.player_legs {
+  width: 185px;
+  height: 100px;
+}
+
+.player_legs,
+.enemy_legs {
+  bottom: 70px;
+}
+
+.player_head_1,
+.player_legs {
+  margin-left: 3px;
+}
+
+.users_form {
+  margin-top: 30px;
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.users_form input,
+.users_form label,
+.play_button,
+.rating_button,
+h1,
+.game_over_button {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004524;
+}
+
+.users_form input {
+  padding-left: 12px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.users_form input,
+.play_button,
+.rating_button,
+.game_over_button {
+  height: 45px;
+}
+
+.finish_game_button,
+.rating_button,
+.play_button,
+.game_over_button {
+  border: none;
+  background-color: #60cc52;
+}
+
+.rating_button,
+.play_button,
+.game_over_button {
+  margin-top: 20px;
+}
+
+.finish_game_button {
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  font-size: 2rem;
+  background-color: #9f3734;
+  color: #dcd36a;
+}
+
+.finish_game_button:hover {
+  background-color: #972825;
+}
+
+.rating_button:hover,
+.play_button:hover,
+.game_over_button:hover {
+  background-color: #008000;
+}
+
+.users_form input:focus {
+  outline-color: #008000;
+}
+
+.enemy_body_1 {
+  background-image: url('../img/enemy_1.png');
+}
+
+.enemy_body_2 {
+  background-image: url('../img/enemy_2.png');
+}
+
+.enemy_body_3{
+  background-image: url('../img/enemy_3.png');
+}
+
+.enemy_body_4 {
+  background-image: url('../img/enemy_4.png');
+}
+
+.enemy_legs {
+  right: 119px;
+  height: 140px;
+  width: 280px;
+  z-index: 1;
+  background-position: -32px -27px;
+}
+
+.enemy_body {
+  right: 0px;
+  bottom: 115px;
+  width: 465px;
+  height: 240px;
+  background-position: -500px -250px;
+  z-index: 2;
+}
+
+.enemy_head {
+  right: 155px;
+  bottom: 325px;
+  height: 240px;
+  width: 180px;
+  z-index: 3;
+  background-position: -32px -205px;
+}
+
+.enemy_weapon {
+  background-image: url('../img/weapons.png');
+  width: 344px;
+  height: 231px;
+  bottom: 130px;
+  right: 375px;
+  z-index: 3;
+}
+
+.enemy_weapon_1 {
+  background-position: 0px 0px;
+}
+
+.enemy_weapon_2 {
+  background-position: 0px -231px;
+}
+
+.enemy_weapon_3 {
+  background-position: 0px -462px;
+}
+
+.fire_attack_wrapper {
+  background-image: url('../img/flame_attack.png');
+  width: 280px;
+  height: 240px;
+  background-position: -55px 0px;
+  bottom: 150px;
+}
+
+.explosion_wrapper {
+  background-image: url('../img/explosion.png');
+}
+
+.fire_attack_wrapper,
+.explosion_wrapper {
+  z-index: 50;
+  position: absolute;
+}
+
+.explosion_wrapper {
+  bottom: 50px;
+  height: 480px;
+}
+
+.explosion_player {
+  left: 0px;
+  width: 400px;
+}
+
+.explosion_enemy {
+  right: 0px;
+  width: 435px;
+}
+
+.popup {
+  margin-left: -400px;
+  left: 50%;
+  top: 0px;
+  background-color: #60cc52;
+  padding: 30px 15px 15px;
+  min-width: 800px;
+  min-height: 700px;
+  z-index: 100;
+}
+
+.popup ol {
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+.popup h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cross {
+  top: 5px;
+  right: 25px;
+  font-size: 4rem;
+}
+
+ol,
+h2 {
+  color: #004524;
+}
+
+h1.gameover_text {
+  font-size: 8rem;
+}
+
+h2.gameover_text {
+  font-size: 3rem;
+  text-align: center;
+}

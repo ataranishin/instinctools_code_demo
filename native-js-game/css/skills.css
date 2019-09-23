@@ -1,0 +1,116 @@
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_container{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center
+}
+
+.skill {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: green;
+}
+
+.wrap_skills {
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+.skill:hover {
+  color: #07471e;
+}
+
+.skill_1:before {
+  content: "\f1e2";
+}
+
+.skill_2:before {
+  content: "\f0e7";
+}
+
+.skill_3:before {
+  content: "\f12e";
+}
+
+.skill_4:before {
+  content: "\f0eb";
+}
+
+.skill_5:before {
+  content: "\f0d0";
+}
+
+.skill_6:before {
+  content: "\f277";
+}
+
+.skill_7:before {
+  content: "\f2d6";
+}
+
+.skill:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 5rem;
+}
+.wrap_skills {
+  background-image: url('../img/board.png');
+  background-position: -11px 0px;
+  width: 465px;
+  height: 465px;
+}
+ .skill_1 {
+  bottom: 64px;
+  left: 37px;
+}
+.skill_2 {
+  bottom: 63px;
+  left: 278px;
+}
+.skill_3 {
+  top: 77px;
+  right: 97px;
+}
+.skill_4 {
+  top: 183px;
+  left: 59px
+}
+.skill_5 {
+  right: 88px;
+  top: -145px;
+}
+.skill_6 {
+  right: 214px;
+  top: 182px;
+}
+ .skill_7 {
+  right: 75px;
+  top: 78px;
+}
